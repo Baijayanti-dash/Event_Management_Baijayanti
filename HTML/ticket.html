@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ticket Purchase Form</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<h1 class="heading">
+				<span class="ettopia">EUT</span><span class="etopia">O</span><span class="eutopia">PIA</span>
+			</h1>
+			<ul>
+				<li><a href="../HTML/index.html">Home</a></li>
+				<li><a href="../HTML/performer.html">Performer</a></li>
+				<li><a href="../HTML/upcoming-events.html">Events</a></li>
+				<li><a href="../HTML/contacts.html">Contact Us</a></li>
+				<li><a href="../HTML/about.html">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<form>
+		<div class="container">
+			<h2 style="text-align: center;">Buy Ticket</h2>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name">
+
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" placeholder="Enter your email">
+
+			<label for="tickets">Number of Tickets</label>
+			<select id="tickets" name="tickets">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+
+			<label for="payment">Payment Method</label>
+			<input type="radio" id="credit-card" name="payment" value="credit-card">
+			<label for="credit-card">Credit Card</label>
+			<input type="radio" id="paypal" name="payment" value="paypal">
+			<label for="paypal">Paypal</label>
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Enter a message"></textarea>
+
+			<input type="submit" value="Submit">
+		</div>
+	</form>
+</body>
+
+</html>
