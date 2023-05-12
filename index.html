@@ -23,14 +23,43 @@
   </header>
   <main>
     <section class="intro">
-      <h2 class="banner-text">Welcome to <b class="center-text">EUTOPIA</b></h2>
-      <h5 class="para"><br><br>"Join us for an unforgettable experience!<br> Book tickets for our upcoming event and be
-        part of an exciting and informative gathering."</h5>
-      <a href="../Event_Management_Baijayanti/ticket.html">
+      <div class="slideshow-container">
+        <img class="slide" src="../Event_Management_Baijayanti/Images/banner.jpg" alt="Slide 1" height="500px"
+          width="100%">
+        <img class="slide" src="../Event_Management_Baijayanti/Images/about.jpg" alt="Slide 2" height="500px"
+          width="100%">
+        <img class="slide" src="../Event_Management_Baijayanti/Images/perf.jpg" alt="Slide 3" height="500px"
+          width="100%">
+        <div class="banner-text">
+          <h2 style="font-size: 50px; color: black;">Welcome to <b class="center-text">EUTOPIA</b></h2>
+          <h5 class="para"><br><br>"Join us for an unforgettable experience!<br> Book tickets for our upcoming event and
+            be part of an exciting and informative gathering."</h5>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <a href="../Event_Management_Baijayanti/ticket.html" style="margin: 20px 0 0 0;">
         <button class="book-now" type="button">Buy Tickets</button>
       </a>
     </section>
 
+    <!-- <div class="slider">
+      <img id="img-1" src="../Event_Management_Baijayanti/Images/banner.jpg" alt="Image 1" />
+      <img id="img-2" src="../Event_Management_Baijayanti/Images/about.jpg" alt="Image 2" />
+      <img id="img-3" src="../Event_Management_Baijayanti/Images/perf.jpg" alt="Image 3" />
+    </div>
+
+    <div class="navigation-button">
+      <span class="dot active" onclick="changeSlide(0)"></span>
+      <span class="dot" onclick="changeSlide(1)"></span>
+      <span class="dot" onclick="changeSlide(2)"></span>
+    </div>
+
+    <div class="btn-center" style="text-align:center; margin: 10px 0 10px 0;">
+      <a href="../Event_Management_Baijayanti/ticket.html">
+        <button class="book-now" type="button">Buy Tickets</button>
+      </a>
+    </div> -->
     <div class="performer-list">
       <h2>Performers</h2>
       <div class="card-container">
@@ -67,6 +96,7 @@
         </div>
       </div>
     </div>
+
 
     <section class="events">
       <h1>Upcoming Events</h1>
@@ -110,6 +140,8 @@
       </div>
     </div>
 
+
+    <!--About us section-->
     <section class="content">
       <h1 style="text-align: center; color: white; margin-top: 0; margin-bottom: 10px;">About Us</h1>
       <p style="text-align: center;">"Our Story and Team - Meet the Faces Behind Our Successful Events"</p><br>
@@ -148,6 +180,11 @@
   <footer>
     <p>&copy; 2023 Event Management</p>
   </footer>
+  <script src="../Event_Management_Baijayanti/JAVASCRIPT/script.js"></script>
+  <script src="../Event_Management_Baijayanti/JAVASCRIPT/contact.js"></script>
+  <script src="../Event_Management_Baijayanti/Jquery/Library/jquery-3.6.4.min.js"></script>
+  <script src="../Event_Management_Baijayanti/Jquery/performerscript.js"></script>
+  <script src="../Event_Management_Baijayanti/Jquery/contact.js"></script>
 
 </body>
 

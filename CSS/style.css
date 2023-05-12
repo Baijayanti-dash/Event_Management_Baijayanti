@@ -1,11 +1,63 @@
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-image: url("../Images/banner.jpg");
+  /* background-image: url("../Images/banner.jpg"); */
   background-repeat: no-repeat;
   background-size: 100% 656px;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+.intro {
+  position: relative;
+}
+
+.slideshow-container {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
 
 header {
   background-color: black;
@@ -221,15 +273,16 @@ h2.banner-text {
 }
 
 h5.para {
-  background: -webkit-linear-gradient(black, whitesmoke);
+  background: -webkit-linear-gradient(#b7bec4, #fdada0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 28px;
-  margin-top: 80px;
+  margin-top: 25px;
 }
 
 button.book-now {
   padding: 10px 20px;
+  margin: 10px 0 0 0;
   cursor: pointer;
   transition: background-color 0.3s;
   border: none;
@@ -238,6 +291,10 @@ button.book-now {
   border-radius: 9px;
   width: 200px;
   background-image: linear-gradient(45deg, #fb6649, #65232e);
+}
+
+b.center-text {
+  list-style: none;
 }
 
 button.book-now:hover {
