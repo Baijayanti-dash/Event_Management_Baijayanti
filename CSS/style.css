@@ -1,10 +1,8 @@
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  /* background-image: url("../Images/banner.jpg"); */
-  background-repeat: no-repeat;
-  background-size: 100% 656px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background: linear-gradient(235deg, black, #5a2f34);
 }
 
 .intro {
@@ -89,6 +87,8 @@ nav a:hover {
   border: 2px solid;
   border-image: linear-gradient(to bottom, #f00, #00f);
   border-image-slice: 2;
+  padding: 10px 5px;
+  color: #f00;
 }
 
 .main {
@@ -191,6 +191,7 @@ nav a:hover {
 .cardd {
   width: 95%;
   margin-right: 20px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 9px;
   overflow: hidden;
@@ -232,6 +233,8 @@ nav a:hover {
   transform: scale(1.05);
   background-color: #fb6649;
   color: black;
+  -webkit-animation: wobble-hor-bottom 0.8s both;
+  animation: wobble-hor-bottom 0.8s both;
 }
 
 .eutopia {
@@ -291,6 +294,7 @@ button.book-now {
   border-radius: 9px;
   width: 200px;
   background-image: linear-gradient(45deg, #fb6649, #65232e);
+
 }
 
 b.center-text {
@@ -299,6 +303,8 @@ b.center-text {
 
 button.book-now:hover {
   background-image: linear-gradient(to bottom right, #4CAF50, #00bcd4);
+  -webkit-animation: wobble-hor-bottom 0.8s both;
+  animation: wobble-hor-bottom 0.8s both;
 }
 
 footer {
@@ -437,6 +443,8 @@ input[type=submit]:hover {
   color: white;
   padding: 0 10px;
   margin: 0;
+  font-size: 25px;
+  text-decoration: underline;
 }
 
 .team {
@@ -522,4 +530,78 @@ input[type=submit]:hover {
   color: #fff;
   font-size: 90px;
   text-shadow: 0 0 3px black, 0 0 5px black;
+}
+
+
+/*Effect for book now button*/
+@-webkit-keyframes wobble-hor-bottom {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@keyframes wobble-hor-bottom {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
 }
